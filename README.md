@@ -21,7 +21,7 @@ dicten analyse --input-type=text --input=/c/src/Dicten/examples/1/text.txt
 
 ```dict``` action will create crypto dictionary in regards with defines specification:
 ```bash
-dicten dict --byte-sequence-size=4 --byte-sequence-count=40 --output=/c/src/Dicten/temp/example.dict
+dicten dict --byte-sequence-length=4 --byte-sequence-count=40 --output=/c/src/Dicten/temp/example.dict
 ```
 
 ```encrypt``` action will encrypt specific text by specified dictionary:
