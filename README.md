@@ -24,7 +24,7 @@ dicten analyse --input-type=text --input=/c/src/Dicten/examples/1/text.txt
 dicten dict --byte-rich=4 --byte-depth=40 --output=/c/src/Dicten/temp/example.dict
 ```
 
-```encrypt``` action will encrypt specific text via provided dictionary:
+```encrypt``` action will encrypt specific text by specified dictionary:
 ```bash
 dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \ 
   --use-noise \
@@ -33,7 +33,7 @@ dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --output=/c/src/Dicten/temp/secured.bin
 ```
 
-```decrypt``` action will decrypt specified binary file by provided dictionary:
+```decrypt``` action will decrypt specified binary file by specified dictionary:
 ```bash
 dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --input=/c/src/Dicten/temp/secured.bin \
