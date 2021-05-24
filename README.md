@@ -40,5 +40,8 @@ dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --output=/c/src/Dicten/temp/text.txt
 ```
 
-## Use cases
-TBA
+## Suggestions
+1. Choose dictionary with enough depth so as many bytes as possible would be replaced by unique byte sequences.
+2. Use small messages without extra words - use noise parameters to add excess random bytes to encrypted message.
+3. Don't hesitate to use noise during encryption via `--use-noise` parameter, this will create additional barier for frequence analysis.
+4. Better to use your own unique slang in messages known to small group of people - this will help to create encrypted messages with additioanl complexity.
