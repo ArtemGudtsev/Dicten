@@ -1,5 +1,5 @@
 # Dicten
-Educational project about steganography way resistant to frequency analysis.
+Educational project about steganography way resistant to frequency analysis. MIT license. No guarantee in any way. Act with respect to society and local law in your country.
 
 ## Pyhon
 Tested with 3.9.5
