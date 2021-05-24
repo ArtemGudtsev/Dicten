@@ -26,12 +26,17 @@ dicten dict [--byte-rich=4] [--byte-depth=40] --output=/c/src/Dicten/temp/exampl
 
 Encrypt action will encrypt specific text via provided dictionary:
 ```
-dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict [--use-noise] [--noise-amount=5] --input=/c/src/Dicten/examples/1/text.txt --output=/c/src/Dicten/temp/secured.bin
+dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \ 
+  [--use-noise] [--noise-amount=5] \
+  --input=/c/src/Dicten/examples/1/text.txt \
+  --output=/c/src/Dicten/temp/secured.bin
 ```
 
 Decrypt action will decrypt specified binary file by provided dictionary:
 ```
-dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict --input=/c/src/Dicten/temp/secured.bin --output=/c/src/Dicten/temp/text.txt
+dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
+  --input=/c/src/Dicten/temp/secured.bin \
+  --output=/c/src/Dicten/temp/text.txt
 ```
 
 ## Use cases
