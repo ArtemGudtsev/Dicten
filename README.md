@@ -40,7 +40,7 @@ dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --output=/c/src/Dicten/temp/text.txt
 ```
 
-## Suggestions for experiments
+## Suggestions for labs
 1. All described experiments are assuming that you will use secure way to pass encryption dictionaries to other abonents, or at least protect them from 3rd parties.
 2. Choose dictionary with enough depth so as many bytes as possible would be replaced by unique byte sequences.
 3. Use small messages without extra words - use noise parameters to add excess information to your encrypted messages.
