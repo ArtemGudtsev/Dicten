@@ -1,2 +1,2 @@
 # Dicten
-Learning project about steganography way resistant to frequency analysis
+Educational project about steganography way resistant to frequency analysis.
