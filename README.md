@@ -17,7 +17,6 @@ dicten --help
 ```analyse``` action will do statistical analysis of specific text as nonrandom char sequence saved to file and shows report:
 ```bash
 dicten analyse \
-  --input-type=text \
   --input=/c/src/Dicten/examples/1/text.txt
 ```
 
