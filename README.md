@@ -12,7 +12,7 @@ dicten --help
 ```
 
 ## Actions
-3 actions will be implemented for dicten: analyse, dict, encrypt, decrypt.
+4 actions will be implemented for dicten: analyse, dict, encrypt, decrypt.
 
 Analyse action will do statistical analysis of specific text saved to file and shows report:
 ```bash
