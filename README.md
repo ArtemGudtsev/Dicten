@@ -16,17 +16,23 @@ dicten --help
 
 ```analyse``` action will do statistical analysis of specific text as nonrandom char sequence saved to file and shows report:
 ```bash
-dicten analyse --input-type=text --input=/c/src/Dicten/examples/1/text.txt
+dicten analyse \
+  --input-type=text \
+  --input=/c/src/Dicten/examples/1/text.txt
 ```
 
 ```dict``` action will create crypto dictionary in regards with defines specification:
 ```bash
-dicten dict --byte-sequence-length=4 --byte-sequence-count=40 --output=/c/src/Dicten/temp/example.dict
+dicten dict \
+  --byte-sequence-length=4 \
+  --byte-sequence-count=40 \
+  --output=/c/src/Dicten/temp/example.dict
 ```
 
 ```encrypt``` action will encrypt specific text by specified dictionary:
 ```bash
-dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \ 
+dicten encrypt \
+  --dictionary=/c/src/Dicten/temp/example.dict \ 
   --use-noise \
   --noise-amount=5 \
   --input=/c/src/Dicten/examples/1/text.txt \
@@ -35,7 +41,8 @@ dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \
 
 ```decrypt``` action will decrypt secured messaged provided as binary file by specified dictionary:
 ```bash
-dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
+dicten decrypt \
+  --dictionary=/c/src/Dicten/temp/example.dict \
   --input=/c/src/Dicten/temp/secured.bin \
   --output=/c/src/Dicten/temp/text.txt
 ```
