@@ -10,8 +10,8 @@ Windows (mingw):
 
 ```bash
 python -m venv dicten-runtime
-alias dicten-py=<repo-path>/dicten-runtime/Scripts/python
-dicten-py --version
+alias dicten=/c/src/Dicten/dicten-runtime/Scripts/python /c/src/Dicten/src/dicten.py
+dicten --help
 ```
 
 ## Goals
