@@ -21,7 +21,7 @@ dicten analyse --input-type=text --input=/c/src/Dicten/examples/1/text.txt
 
 ```dict``` action will create crypto dictionary in regards with defines specification:
 ```bash
-dicten dict --byte-rich=4 --byte-depth=40 --output=/c/src/Dicten/temp/example.dict
+dicten dict --byte-sequence-size=4 --byte-sequence-count=40 --output=/c/src/Dicten/temp/example.dict
 ```
 
 ```encrypt``` action will encrypt specific text by specified dictionary:
@@ -42,7 +42,7 @@ dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
 
 ## Suggestions for labs
 1. All described experiments are assuming that you will use secure way to pass encryption dictionaries to other abonents, or at least protect them from 3rd parties.
-2. Choose dictionary with enough depth so as many bytes as possible would be replaced by unique byte sequences.
+2. Choose dictionary with enough byte sequence count per input byte so as many bytes as possible would be replaced by unique byte sequences.
 3. Use small messages without extra words - use noise parameters to add excess information to your encrypted messages. Usage of extra words will make frequency analysis easier because they are still part of meaningfull information even if you don't use them to pass subject of message.
 4. And in general don't hesitate to use noise during encryption via `--use-noise` parameter, this will create additional barier for frequence analysis.
 5. Better to use your own unique slang in messages known to small group of people - this will help to create encrypted messages with additioanl complexity.
