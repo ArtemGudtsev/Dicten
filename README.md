@@ -33,7 +33,7 @@ dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --output=/c/src/Dicten/temp/secured.bin
 ```
 
-```decrypt``` action will decrypt specified binary file by specified dictionary:
+```decrypt``` action will decrypt secured messaged provided as binary file by specified dictionary:
 ```bash
 dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --input=/c/src/Dicten/temp/secured.bin \
