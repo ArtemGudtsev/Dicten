@@ -1,8 +1,6 @@
 # Dicten
 Educational project about steganography way resistant to frequency analysis. MIT license. No guarantee in any way. 
 
-**Disclaimer**: Act with respect to society and local law in your country. I keep right to immediately report any criminal behavior related to usage of this project came to my knowledge such as development of crypto viruses, fraud, intentional damage of information and other prohibited activity.
-
 ## Pyhon
 Tested with 3.9.5
 
@@ -48,3 +46,6 @@ dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
 3. Use small messages without extra words - use noise parameters to add excess information to your encrypted messages.
 4. And in general don't hesitate to use noise during encryption via `--use-noise` parameter, this will create additional barier for frequence analysis.
 5. Better to use your own unique slang in messages known to small group of people - this will help to create encrypted messages with additioanl complexity.
+
+# Disclaimer
+Act with respect to society and local law in your country. I keep right to immediately report any criminal behavior related to usage of this project came to my knowledge such as development of crypto viruses, fraud, intentional damage of information and other prohibited activity.
