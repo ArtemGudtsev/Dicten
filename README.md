@@ -21,13 +21,14 @@ dicten analyse --input=/c/src/Dicten/examples/1/text.txt
 
 Dict action will create crypto dictionary in regards with defines specification:
 ```bash
-dicten dict [--byte-rich=4] [--byte-depth=40] --output=/c/src/Dicten/temp/example.dict
+dicten dict --byte-rich=4 --byte-depth=40 --output=/c/src/Dicten/temp/example.dict
 ```
 
 Encrypt action will encrypt specific text via provided dictionary:
 ```bash
 dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \ 
-  [--use-noise] [--noise-amount=5] \
+  --use-noise \
+  --noise-amount=5 \
   --input=/c/src/Dicten/examples/1/text.txt \
   --output=/c/src/Dicten/temp/secured.bin
 ```
