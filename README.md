@@ -43,7 +43,7 @@ dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
 ## Suggestions for labs
 1. All described experiments are assuming that you will use secure way to pass encryption dictionaries to other abonents, or at least protect them from 3rd parties.
 2. Choose dictionary with enough depth so as many bytes as possible would be replaced by unique byte sequences.
-3. Use small messages without extra words - use noise parameters to add excess information to your encrypted messages. Usage of extra words will make frequncy analysis easier because they are part of meaningfull information.
+3. Use small messages without extra words - use noise parameters to add excess information to your encrypted messages. Usage of extra words will make frequency analysis easier because they are part of meaningfull information.
 4. And in general don't hesitate to use noise during encryption via `--use-noise` parameter, this will create additional barier for frequence analysis.
 5. Better to use your own unique slang in messages known to small group of people - this will help to create encrypted messages with additioanl complexity.
 
