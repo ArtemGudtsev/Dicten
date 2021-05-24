@@ -16,7 +16,7 @@ dicten --help
 
 ```analyse``` action will do statistical analysis of specific text saved to file and shows report:
 ```bash
-dicten analyse --input-type={text,binary} --input=/c/src/Dicten/examples/1/text.txt
+dicten analyse --input-type=text --input=/c/src/Dicten/examples/1/text.txt
 ```
 
 ```dict``` action will create crypto dictionary in regards with defines specification:
