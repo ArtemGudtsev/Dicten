@@ -12,19 +12,19 @@ dicten --help
 ```
 
 ## Actions
-4 actions will be implemented for dicten: analyse, dict, encrypt, decrypt.
+4 actions will be implemented for dicten: ```analyse```, ```dict```, ```encrypt```, ```decrypt```.
 
-Analyse action will do statistical analysis of specific text saved to file and shows report:
+```analyse``` action will do statistical analysis of specific text saved to file and shows report:
 ```bash
 dicten analyse --input=/c/src/Dicten/examples/1/text.txt
 ```
 
-Dict action will create crypto dictionary in regards with defines specification:
+```dict``` action will create crypto dictionary in regards with defines specification:
 ```bash
 dicten dict --byte-rich=4 --byte-depth=40 --output=/c/src/Dicten/temp/example.dict
 ```
 
-Encrypt action will encrypt specific text via provided dictionary:
+```encrypt``` action will encrypt specific text via provided dictionary:
 ```bash
 dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \ 
   --use-noise \
@@ -33,7 +33,7 @@ dicten encrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --output=/c/src/Dicten/temp/secured.bin
 ```
 
-Decrypt action will decrypt specified binary file by provided dictionary:
+```decrypt``` action will decrypt specified binary file by provided dictionary:
 ```bash
 dicten decrypt --dictionary=/c/src/Dicten/temp/example.dict \
   --input=/c/src/Dicten/temp/secured.bin \
